@@ -84,7 +84,7 @@ def generate_html(data, output_file=None):
     <p><strong>Imagem:</strong></p>
 """
             if item['img'] != 'N/A':
-                html_content += f"""    <img src="{item['img']}" alt="Imagem">
+                html_content += f"""    <img src="{item['img']}" alt="Imagem" width="192" height="192">
 """
             else:
                 html_content += f"""    <p>Nenhuma imagem encontrada</p>
@@ -94,7 +94,7 @@ def generate_html(data, output_file=None):
     else:
         html_content += "    <p>Nenhum dado foi coletado.</p>\n    <hr>\n"
     
-    html_content += """    <p><small>Página gerada automaticamente pelo script parse.py</small></p>
+    html_content += """ 
 </body>
 </html>
 """
